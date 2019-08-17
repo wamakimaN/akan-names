@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type="text/javascript" href="js/scripts.js">
+    <script type="text/javascript" src="js/scripts.js">
     </script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -12,23 +12,25 @@
       <div class="jumbotron">
         <h1>What Is Your Akan Birth Name?</h1>
       </div>
-      <form>
+      <form id="quiz" name="questions">
         <p> In Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
            This is known as the Akan naming system. There are different names for each gender.This magical place determines your
          Akan name by asking a few simple questions. Wanna try it out ? </p>
         <p>First, tell us abit about yourself!</p>
         <p>what year were you born?</p>
-        <input id="textarea" type="text" name="year" placeholder="e.g 1980">
+        <input id="textbox" type="text" name="year" placeholder="e.g 1980">
         <p>what are the first two digits of your birth year?</p>
         <input id="textbox" type="text" name="first2" placeholder="e.g 19">
         <p>what are the last two digits of your birth year?</p>
         <input id="textbox" type="text" name="last2" placeholder="e.g 80">
+        <p>On which month were you born?</p>
+        <input id="textbox" type="text" name="month" placeholder="e.g 12">
         <p>what is your prefered gender?</p>
         <input type="radio" name="gender" value="Male">Male<br>
         <input type="radio" name="gender" value="Female">Female<br>
         <br>
         <p>now press this button.</p>
-        <input type="button" name="button" value="Press Me">
+        <input type="button" name="button" value="Press Me"onclick = "check();">
       </form>
     </div>
   </body>
