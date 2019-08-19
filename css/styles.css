@@ -1,4 +1,23 @@
+body{
+  font-family: 'Livvic', sans-serif;
+}
 .jumbotron {
   text-align: center;
-  
+}
+form {
+  padding: 30px;
+  margin: 70
+}
+.container {
+  background-color: blue;
+  margin; 0;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+text-align: center;
+border-radius: 10px;
+font-family: inherit;
 }
