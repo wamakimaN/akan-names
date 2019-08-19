@@ -1,16 +1,10 @@
 function check(){
-var day = document.questions.date.value;
-var century = document.questions.first2.value;
-var numb2 = document.questions.last2.value;
-var month =document.questions.month.value;
+var day = parseInt(document.getElementById("date").value);
+var century = parseInt(document.getElementById("first2").value);
+var numb2 = parseInt(document.getElementById("last2").value);
+var month = parseInt(document.getElementById("month").value);
 
-  if (day > 31) {
-  alert("check date")
-    }
-  if (century > 20) {
-  alert ("enter first two digits of birth year")
-  }
-  if (month > 12) {
-    alert("enter correct month format")
-  }
+let findDay = Math.round( ( ( (century/4) -2*century-1) + ((5*numb2/4) ) + ((26*(month+1)/10)) + day) % 7)
+
+  alert(findDay)
 }
