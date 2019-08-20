@@ -1,16 +1,21 @@
 body{
-  font-family: 'Livvic', sans-serif;
+background-image: url(../images/ghana.jpg);
 }
 .jumbotron {
   text-align: center;
+  background-color: #C13584;
 }
 form {
   padding: 30px;
-  margin: 70
+  margin: 70;
+  background-color: pink;
+  opacity: 0.7;
+  font-size: 24px;
+  border-radius: 15px;
 }
 .container {
-  background-color: blue;
   margin; 0;
+  font-family: 'Lexend Mega', sans-serif;
 }
 input,
 button,
